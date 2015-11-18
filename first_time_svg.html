@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<svg width="1000" height="1000">
+		<ellipse cx= "500" cy = "500" rx = "300" ry = "100"
+		style = "stroke :rgb(51,51,51) ;stroke-width : 4 ;fill : rgb(51,255,51)"/>
+		<!-- <g id = "R1"> -->
+		<g id="R1" transform="translate(50 50)"> 
+		<circle cx = "500" cy = "500" r= "20" stroke = "red" stroke-width = "3" fill = "red"/>
+
+		<animateMotion
+            path="M50,50 q50,50 50,0 q50,50 50,0"
+            <!-- begin="0s" dur="10s" repeatCount="indefinite" -->
+        />
+		<animateTransform
+          attributeName="transform"
+          begin="0s"
+          dur="10s"
+          type="rotate"
+          <!-- from="70"
+          to="30" -->
+          <!-- repeatCount="indefinite" -->
+        />
+        <use xlink:href="#R1" transform="rotate(72 390 150)"/>
+		<use xlink:href="#R1" transform="rotate(144 390 150)"/>
+		<use xlink:href="#R1" transform="rotate(216 390 150)"/>
+		<use xlink:href="#R1" transform="rotate(288 390 150)"/>
+        </g>
+	</svg>
+</body>
+</html>
